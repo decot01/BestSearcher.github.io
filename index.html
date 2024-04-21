@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Самый лучший сайт</title>
+    <meta charset ="utf-8"> 
+    <link rel='stylesheet' href='style.css'>
+
+</head>
+<body>
+
+    <div class='header'>
+
+        <a href="settings.html">
+            <img class="settingsbutton" src="images/settings.png" alt="Settings">
+        </a>
+        <a href="calculator.html">
+            <img class="calculatorbutton" src="images/calculator.png" alt="Calculator">
+        </a>
+        
+
+            <div class="containerclock">
+                <div class="clock">
+                    <span id="hrs">00</span>
+                    <span>:</span>
+                    <span id="min">00</span>
+                    <span>:</span>
+                    <span id="sec">00</span>
+                </div>
+            </div>
+    
+
+            <form class="searcher">
+                <input type="search" placeholder="Что ищем?">
+                <button>Искать!</button>
+            </form>
+    </div>  
+
+
+    <div class="line">
+        <div class="calendar">
+            <div class="left">
+                <p id="date">01</p>
+                <p id="day">Sunday</p>
+            </div>
+            <div class="right">
+                <p id="month">January</p>
+                <p id="year">2020</p>
+            </div>
+        </div>
+
+
+        <div class="todo-app">
+            <h2>To-Do List <img src="images/icon.png"></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your text">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="list-container">
+                <!-- <li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li> -->
+            </ul>
+        </div>
+
+        <div class="container">
+            <p>Enter your text or URL</p>
+            <input type="text" placeholder="Text or URL" id="qrText">
+        
+            <div id="imgBox">
+                <img src="" id="qrImage">
+            </div>
+            <button onclick="generateQR()">Generate QR Code</button>
+        </div>
+    </div>
+
+    <script src="code.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js'></script>
+</body>
